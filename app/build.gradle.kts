@@ -5,6 +5,8 @@ plugins {
     kotlin("kapt")
 }
 
+// AK/SK read from gradle.properties
+
 android {
     namespace = "com.wisecloud.app"
     compileSdk = 34
@@ -17,6 +19,9 @@ android {
         versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "WISECLOUD_ACCESS_KEY", "\"${project.findProperty("WISECLOUD_ACCESS_KEY") ?: ""}\"")
+        buildConfigField("String", "WISECLOUD_SECRET_KEY", "\"${project.findProperty("WISECLOUD_SECRET_KEY") ?: ""}\"")
     }
 
     buildTypes {

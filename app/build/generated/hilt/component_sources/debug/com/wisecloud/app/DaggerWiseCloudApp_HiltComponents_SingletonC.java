@@ -727,7 +727,7 @@ public final class DaggerWiseCloudApp_HiltComponents_SingletonC {
     }
 
     @Override
-    public void injectWiseCloudApp(WiseCloudApp arg0) {
+    public void injectWiseCloudApp(WiseCloudApp wiseCloudApp) {
     }
 
     @Override

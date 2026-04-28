@@ -9,4 +9,8 @@ public final class BuildConfig {
   public static final String BUILD_TYPE = "debug";
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1.0.0";
+  // Field from default config.
+  public static final String WISECLOUD_ACCESS_KEY = "69eac6dbef4c1b0001cca0cc";
+  // Field from default config.
+  public static final String WISECLOUD_SECRET_KEY = "ZUeEhfYzTSSBesCpsuRhESrZMhekETUc";
 }
