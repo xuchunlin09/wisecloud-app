@@ -5,7 +5,14 @@
     <!-- Login -->
     <string name="login_subtitle">Sign in to manage your devices</string>
     <string name="hint_email">Email</string>
+    <string name="hint_username">Username</string>
+    <string name="btn_go_register">Don\'t have an account? Register</string>
     <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_back_to_login">Already have an account? Login</string>
+    <string name="register_subtitle">Create your account</string>
+    <string name="register_success">Registration successful. Please login.</string>
     <string name="hint_verify_code">Verification Code</string>
     <string name="btn_get_code">Get Code</string>
     <string name="btn_login">Login</string>

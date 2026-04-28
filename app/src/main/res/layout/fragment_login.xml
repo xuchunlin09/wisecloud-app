@@ -31,21 +31,20 @@
             android:textColor="#757575"
             android:textSize="14sp" />
 
-        <!-- Email Input -->
+        <!-- Username Input -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tilEmail"
+            android:id="@+id/tilUsername"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:hint="@string/hint_email"
-            app:startIconDrawable="@android:drawable/sym_action_email">
+            android:hint="@string/hint_username">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etEmail"
+                android:id="@+id/etUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
+                android:inputType="text"
                 android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -67,73 +66,6 @@
                 android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Email Verification Section -->
-        <LinearLayout
-            android:id="@+id/layoutEmailVerify"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tilVerifyCode"
-                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/hint_verify_code">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etVerifyCode"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:maxLines="1" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnGetCode"
-                style="@style/Widget.Material3.Button.TonalButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="@string/btn_get_code" />
-        </LinearLayout>
-
-        <!-- MFA Section -->
-        <LinearLayout
-            android:id="@+id/layoutMfa"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:visibility="gone">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:text="@string/mfa_prompt"
-                android:textColor="#616161"
-                android:textSize="14sp" />
-
-            <com.wisecloud.app.widget.MfaInputView
-                android:id="@+id/mfaInputView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-        <!-- Switch Verify Method Link -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnSwitchMethod"
-            style="@style/Widget.Material3.Button.TextButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/switch_to_mfa" />
-
         <!-- Remember Password -->
         <com.google.android.material.checkbox.MaterialCheckBox
             android:id="@+id/cbRemember"
@@ -150,6 +82,15 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="@string/btn_login" />
+
+        <!-- Go to Register -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGoRegister"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_go_register" />
 
         <!-- Loading Indicator -->
         <com.google.android.material.progressindicator.CircularProgressIndicator

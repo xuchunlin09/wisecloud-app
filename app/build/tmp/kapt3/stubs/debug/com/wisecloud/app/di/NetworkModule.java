@@ -19,7 +19,7 @@ import javax.inject.Singleton;
 @dagger.hilt.InstallIn(value = {dagger.hilt.components.SingletonComponent.class})
 public final class NetworkModule {
     @org.jetbrains.annotations.NotNull()
-    private static final java.lang.String BASE_URL = "https://api.wisecloud.com/";
+    private static final java.lang.String BASE_URL = "http://10.0.2.2:8080/";
     @org.jetbrains.annotations.NotNull()
     public static final com.wisecloud.app.di.NetworkModule INSTANCE = null;
     

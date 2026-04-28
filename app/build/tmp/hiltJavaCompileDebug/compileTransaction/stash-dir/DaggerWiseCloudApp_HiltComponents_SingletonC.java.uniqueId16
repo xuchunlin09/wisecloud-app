@@ -20,6 +20,9 @@ import com.wisecloud.app.ui.MainActivity;
 import com.wisecloud.app.ui.auth.LoginFragment;
 import com.wisecloud.app.ui.auth.LoginViewModel;
 import com.wisecloud.app.ui.auth.LoginViewModel_HiltModules_KeyModule_ProvideFactory;
+import com.wisecloud.app.ui.auth.RegisterFragment;
+import com.wisecloud.app.ui.auth.RegisterViewModel;
+import com.wisecloud.app.ui.auth.RegisterViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.wisecloud.app.ui.dashboard.DashboardFragment;
 import com.wisecloud.app.ui.dashboard.DashboardViewModel;
 import com.wisecloud.app.ui.dashboard.DashboardViewModel_HiltModules_KeyModule_ProvideFactory;
@@ -363,6 +366,10 @@ public final class DaggerWiseCloudApp_HiltComponents_SingletonC {
     }
 
     @Override
+    public void injectRegisterFragment(RegisterFragment arg0) {
+    }
+
+    @Override
     public void injectDashboardFragment(DashboardFragment arg0) {
     }
 
@@ -462,7 +469,7 @@ public final class DaggerWiseCloudApp_HiltComponents_SingletonC {
 
     @Override
     public Set<String> getViewModelKeys() {
-      return SetBuilder.<String>newSetBuilder(12).add(BatchInstallViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(BatchUninstallViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(DashboardViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(DeviceDetailViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(DeviceListViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(FilePushViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(LoginViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(OtaUpdateViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(PushInstructionViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(TaskDetailViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(TaskListViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(WiseOSSettingViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
+      return SetBuilder.<String>newSetBuilder(13).add(BatchInstallViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(BatchUninstallViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(DashboardViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(DeviceDetailViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(DeviceListViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(FilePushViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(LoginViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(OtaUpdateViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(PushInstructionViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(RegisterViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(TaskDetailViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(TaskListViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(WiseOSSettingViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
     }
 
     @Override
@@ -506,6 +513,8 @@ public final class DaggerWiseCloudApp_HiltComponents_SingletonC {
 
     private Provider<PushInstructionViewModel> pushInstructionViewModelProvider;
 
+    private Provider<RegisterViewModel> registerViewModelProvider;
+
     private Provider<TaskDetailViewModel> taskDetailViewModelProvider;
 
     private Provider<TaskListViewModel> taskListViewModelProvider;
@@ -534,14 +543,15 @@ public final class DaggerWiseCloudApp_HiltComponents_SingletonC {
       this.loginViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 6);
       this.otaUpdateViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 7);
       this.pushInstructionViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 8);
-      this.taskDetailViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 9);
-      this.taskListViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 10);
-      this.wiseOSSettingViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 11);
+      this.registerViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 9);
+      this.taskDetailViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 10);
+      this.taskListViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 11);
+      this.wiseOSSettingViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 12);
     }
 
     @Override
     public Map<String, javax.inject.Provider<ViewModel>> getHiltViewModelMap() {
-      return MapBuilder.<String, javax.inject.Provider<ViewModel>>newMapBuilder(12).put("com.wisecloud.app.ui.wizard.install.BatchInstallViewModel", ((Provider) batchInstallViewModelProvider)).put("com.wisecloud.app.ui.wizard.uninstall.BatchUninstallViewModel", ((Provider) batchUninstallViewModelProvider)).put("com.wisecloud.app.ui.dashboard.DashboardViewModel", ((Provider) dashboardViewModelProvider)).put("com.wisecloud.app.ui.device.detail.DeviceDetailViewModel", ((Provider) deviceDetailViewModelProvider)).put("com.wisecloud.app.ui.device.list.DeviceListViewModel", ((Provider) deviceListViewModelProvider)).put("com.wisecloud.app.ui.wizard.filepush.FilePushViewModel", ((Provider) filePushViewModelProvider)).put("com.wisecloud.app.ui.auth.LoginViewModel", ((Provider) loginViewModelProvider)).put("com.wisecloud.app.ui.wizard.ota.OtaUpdateViewModel", ((Provider) otaUpdateViewModelProvider)).put("com.wisecloud.app.ui.wizard.instruction.PushInstructionViewModel", ((Provider) pushInstructionViewModelProvider)).put("com.wisecloud.app.ui.task.detail.TaskDetailViewModel", ((Provider) taskDetailViewModelProvider)).put("com.wisecloud.app.ui.task.list.TaskListViewModel", ((Provider) taskListViewModelProvider)).put("com.wisecloud.app.ui.wizard.wiseos.WiseOSSettingViewModel", ((Provider) wiseOSSettingViewModelProvider)).build();
+      return MapBuilder.<String, javax.inject.Provider<ViewModel>>newMapBuilder(13).put("com.wisecloud.app.ui.wizard.install.BatchInstallViewModel", ((Provider) batchInstallViewModelProvider)).put("com.wisecloud.app.ui.wizard.uninstall.BatchUninstallViewModel", ((Provider) batchUninstallViewModelProvider)).put("com.wisecloud.app.ui.dashboard.DashboardViewModel", ((Provider) dashboardViewModelProvider)).put("com.wisecloud.app.ui.device.detail.DeviceDetailViewModel", ((Provider) deviceDetailViewModelProvider)).put("com.wisecloud.app.ui.device.list.DeviceListViewModel", ((Provider) deviceListViewModelProvider)).put("com.wisecloud.app.ui.wizard.filepush.FilePushViewModel", ((Provider) filePushViewModelProvider)).put("com.wisecloud.app.ui.auth.LoginViewModel", ((Provider) loginViewModelProvider)).put("com.wisecloud.app.ui.wizard.ota.OtaUpdateViewModel", ((Provider) otaUpdateViewModelProvider)).put("com.wisecloud.app.ui.wizard.instruction.PushInstructionViewModel", ((Provider) pushInstructionViewModelProvider)).put("com.wisecloud.app.ui.auth.RegisterViewModel", ((Provider) registerViewModelProvider)).put("com.wisecloud.app.ui.task.detail.TaskDetailViewModel", ((Provider) taskDetailViewModelProvider)).put("com.wisecloud.app.ui.task.list.TaskListViewModel", ((Provider) taskListViewModelProvider)).put("com.wisecloud.app.ui.wizard.wiseos.WiseOSSettingViewModel", ((Provider) wiseOSSettingViewModelProvider)).build();
     }
 
     @Override
@@ -597,13 +607,16 @@ public final class DaggerWiseCloudApp_HiltComponents_SingletonC {
           case 8: // com.wisecloud.app.ui.wizard.instruction.PushInstructionViewModel 
           return (T) new PushInstructionViewModel(singletonCImpl.taskRepositoryImplProvider.get());
 
-          case 9: // com.wisecloud.app.ui.task.detail.TaskDetailViewModel 
+          case 9: // com.wisecloud.app.ui.auth.RegisterViewModel 
+          return (T) new RegisterViewModel(singletonCImpl.authRepositoryImplProvider.get());
+
+          case 10: // com.wisecloud.app.ui.task.detail.TaskDetailViewModel 
           return (T) new TaskDetailViewModel(singletonCImpl.taskRepositoryImplProvider.get());
 
-          case 10: // com.wisecloud.app.ui.task.list.TaskListViewModel 
+          case 11: // com.wisecloud.app.ui.task.list.TaskListViewModel 
           return (T) new TaskListViewModel(singletonCImpl.taskRepositoryImplProvider.get());
 
-          case 11: // com.wisecloud.app.ui.wizard.wiseos.WiseOSSettingViewModel 
+          case 12: // com.wisecloud.app.ui.wizard.wiseos.WiseOSSettingViewModel 
           return (T) new WiseOSSettingViewModel(singletonCImpl.taskRepositoryImplProvider.get());
 
           default: throw new AssertionError(id);
@@ -727,7 +740,7 @@ public final class DaggerWiseCloudApp_HiltComponents_SingletonC {
     }
 
     @Override
-    public void injectWiseCloudApp(WiseCloudApp arg0) {
+    public void injectWiseCloudApp(WiseCloudApp wiseCloudApp) {
     }
 
     @Override

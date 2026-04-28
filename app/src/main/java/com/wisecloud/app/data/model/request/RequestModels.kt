@@ -1,14 +1,13 @@
 package com.wisecloud.app.data.model.request
 
 data class LoginRequest(
-    val email: String,
-    val password: String,
-    val verifyCode: String,
-    val verifyMethod: String
+    val username: String,
+    val password: String
 )
 
-data class SendCodeRequest(
-    val email: String
+data class RegisterRequest(
+    val username: String,
+    val password: String
 )
 
 data class InstallTaskRequest(

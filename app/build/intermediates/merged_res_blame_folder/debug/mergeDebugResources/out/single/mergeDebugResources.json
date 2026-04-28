@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-debug-4:/layout_bottom_sheet_installed_apps.xml.flat",
-        "source": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-main-6:/layout/bottom_sheet_installed_apps.xml"
-    },
-    {
         "merged": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-debug-4:/layout_fragment_file_push_wizard.xml.flat",
         "source": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-main-6:/layout/fragment_file_push_wizard.xml"
+    },
+    {
+        "merged": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-debug-4:/layout_bottom_sheet_installed_apps.xml.flat",
+        "source": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-main-6:/layout/bottom_sheet_installed_apps.xml"
     },
     {
         "merged": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-debug-4:/layout_item_uninstall_app.xml.flat",
@@ -16,12 +16,12 @@
         "source": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-main-6:/layout/fragment_dashboard.xml"
     },
     {
-        "merged": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-debug-4:/layout_fragment_task_detail.xml.flat",
-        "source": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-main-6:/layout/fragment_task_detail.xml"
-    },
-    {
         "merged": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-debug-4:/layout_fragment_login.xml.flat",
         "source": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-main-6:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-debug-4:/layout_fragment_task_detail.xml.flat",
+        "source": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-main-6:/layout/fragment_task_detail.xml"
     },
     {
         "merged": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-debug-4:/layout_fragment_batch_uninstall_wizard.xml.flat",
@@ -114,6 +114,10 @@
     {
         "merged": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-debug-4:/layout_item_task_device.xml.flat",
         "source": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-main-6:/layout/item_task_device.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-debug-4:/layout_fragment_register.xml.flat",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_register.xml"
     },
     {
         "merged": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-debug-4:/layout_item_task.xml.flat",

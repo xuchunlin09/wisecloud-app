@@ -118,5 +118,9 @@
     {
         "merged": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-mergeDebugResources-3:/layout/fragment_push_instruction_wizard.xml",
         "source": "/Users/develop/Documents/gradle-user/daemon/8.13/com.wisecloud.app-main-6:/layout/fragment_push_instruction_wizard.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/fragment_register.xml",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_register.xml"
     }
 ]

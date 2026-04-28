@@ -4,7 +4,6 @@ package com.wisecloud.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,7 +15,6 @@ import com.google.android.material.progressindicator.CircularProgressIndicator;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.wisecloud.app.R;
-import com.wisecloud.app.widget.MfaInputView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -26,70 +24,43 @@ public final class FragmentLoginBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
-  public final MaterialButton btnGetCode;
+  public final MaterialButton btnGoRegister;
 
   @NonNull
   public final MaterialButton btnLogin;
 
   @NonNull
-  public final MaterialButton btnSwitchMethod;
-
-  @NonNull
   public final MaterialCheckBox cbRemember;
-
-  @NonNull
-  public final TextInputEditText etEmail;
 
   @NonNull
   public final TextInputEditText etPassword;
 
   @NonNull
-  public final TextInputEditText etVerifyCode;
-
-  @NonNull
-  public final LinearLayout layoutEmailVerify;
-
-  @NonNull
-  public final LinearLayout layoutMfa;
-
-  @NonNull
-  public final MfaInputView mfaInputView;
+  public final TextInputEditText etUsername;
 
   @NonNull
   public final CircularProgressIndicator progressBar;
 
   @NonNull
-  public final TextInputLayout tilEmail;
-
-  @NonNull
   public final TextInputLayout tilPassword;
 
   @NonNull
-  public final TextInputLayout tilVerifyCode;
+  public final TextInputLayout tilUsername;
 
-  private FragmentLoginBinding(@NonNull ScrollView rootView, @NonNull MaterialButton btnGetCode,
-      @NonNull MaterialButton btnLogin, @NonNull MaterialButton btnSwitchMethod,
-      @NonNull MaterialCheckBox cbRemember, @NonNull TextInputEditText etEmail,
-      @NonNull TextInputEditText etPassword, @NonNull TextInputEditText etVerifyCode,
-      @NonNull LinearLayout layoutEmailVerify, @NonNull LinearLayout layoutMfa,
-      @NonNull MfaInputView mfaInputView, @NonNull CircularProgressIndicator progressBar,
-      @NonNull TextInputLayout tilEmail, @NonNull TextInputLayout tilPassword,
-      @NonNull TextInputLayout tilVerifyCode) {
+  private FragmentLoginBinding(@NonNull ScrollView rootView, @NonNull MaterialButton btnGoRegister,
+      @NonNull MaterialButton btnLogin, @NonNull MaterialCheckBox cbRemember,
+      @NonNull TextInputEditText etPassword, @NonNull TextInputEditText etUsername,
+      @NonNull CircularProgressIndicator progressBar, @NonNull TextInputLayout tilPassword,
+      @NonNull TextInputLayout tilUsername) {
     this.rootView = rootView;
-    this.btnGetCode = btnGetCode;
+    this.btnGoRegister = btnGoRegister;
     this.btnLogin = btnLogin;
-    this.btnSwitchMethod = btnSwitchMethod;
     this.cbRemember = cbRemember;
-    this.etEmail = etEmail;
     this.etPassword = etPassword;
-    this.etVerifyCode = etVerifyCode;
-    this.layoutEmailVerify = layoutEmailVerify;
-    this.layoutMfa = layoutMfa;
-    this.mfaInputView = mfaInputView;
+    this.etUsername = etUsername;
     this.progressBar = progressBar;
-    this.tilEmail = tilEmail;
     this.tilPassword = tilPassword;
-    this.tilVerifyCode = tilVerifyCode;
+    this.tilUsername = tilUsername;
   }
 
   @Override
@@ -119,9 +90,9 @@ public final class FragmentLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnGetCode;
-      MaterialButton btnGetCode = ViewBindings.findChildViewById(rootView, id);
-      if (btnGetCode == null) {
+      id = R.id.btnGoRegister;
+      MaterialButton btnGoRegister = ViewBindings.findChildViewById(rootView, id);
+      if (btnGoRegister == null) {
         break missingId;
       }
 
@@ -131,21 +102,9 @@ public final class FragmentLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnSwitchMethod;
-      MaterialButton btnSwitchMethod = ViewBindings.findChildViewById(rootView, id);
-      if (btnSwitchMethod == null) {
-        break missingId;
-      }
-
       id = R.id.cbRemember;
       MaterialCheckBox cbRemember = ViewBindings.findChildViewById(rootView, id);
       if (cbRemember == null) {
-        break missingId;
-      }
-
-      id = R.id.etEmail;
-      TextInputEditText etEmail = ViewBindings.findChildViewById(rootView, id);
-      if (etEmail == null) {
         break missingId;
       }
 
@@ -155,27 +114,9 @@ public final class FragmentLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.etVerifyCode;
-      TextInputEditText etVerifyCode = ViewBindings.findChildViewById(rootView, id);
-      if (etVerifyCode == null) {
-        break missingId;
-      }
-
-      id = R.id.layoutEmailVerify;
-      LinearLayout layoutEmailVerify = ViewBindings.findChildViewById(rootView, id);
-      if (layoutEmailVerify == null) {
-        break missingId;
-      }
-
-      id = R.id.layoutMfa;
-      LinearLayout layoutMfa = ViewBindings.findChildViewById(rootView, id);
-      if (layoutMfa == null) {
-        break missingId;
-      }
-
-      id = R.id.mfaInputView;
-      MfaInputView mfaInputView = ViewBindings.findChildViewById(rootView, id);
-      if (mfaInputView == null) {
+      id = R.id.etUsername;
+      TextInputEditText etUsername = ViewBindings.findChildViewById(rootView, id);
+      if (etUsername == null) {
         break missingId;
       }
 
@@ -185,27 +126,20 @@ public final class FragmentLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tilEmail;
-      TextInputLayout tilEmail = ViewBindings.findChildViewById(rootView, id);
-      if (tilEmail == null) {
-        break missingId;
-      }
-
       id = R.id.tilPassword;
       TextInputLayout tilPassword = ViewBindings.findChildViewById(rootView, id);
       if (tilPassword == null) {
         break missingId;
       }
 
-      id = R.id.tilVerifyCode;
-      TextInputLayout tilVerifyCode = ViewBindings.findChildViewById(rootView, id);
-      if (tilVerifyCode == null) {
+      id = R.id.tilUsername;
+      TextInputLayout tilUsername = ViewBindings.findChildViewById(rootView, id);
+      if (tilUsername == null) {
         break missingId;
       }
 
-      return new FragmentLoginBinding((ScrollView) rootView, btnGetCode, btnLogin, btnSwitchMethod,
-          cbRemember, etEmail, etPassword, etVerifyCode, layoutEmailVerify, layoutMfa, mfaInputView,
-          progressBar, tilEmail, tilPassword, tilVerifyCode);
+      return new FragmentLoginBinding((ScrollView) rootView, btnGoRegister, btnLogin, cbRemember,
+          etPassword, etUsername, progressBar, tilPassword, tilUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -5,6 +5,8 @@ import com.wisecloud.app.di.RepositoryModule;
 import com.wisecloud.app.ui.MainActivity_GeneratedInjector;
 import com.wisecloud.app.ui.auth.LoginFragment_GeneratedInjector;
 import com.wisecloud.app.ui.auth.LoginViewModel_HiltModules;
+import com.wisecloud.app.ui.auth.RegisterFragment_GeneratedInjector;
+import com.wisecloud.app.ui.auth.RegisterViewModel_HiltModules;
 import com.wisecloud.app.ui.dashboard.DashboardFragment_GeneratedInjector;
 import com.wisecloud.app.ui.dashboard.DashboardViewModel_HiltModules;
 import com.wisecloud.app.ui.device.detail.DeviceDetailFragment_GeneratedInjector;
@@ -190,6 +192,7 @@ public final class WiseCloudApp_HiltComponents {
           LoginViewModel_HiltModules.KeyModule.class,
           OtaUpdateViewModel_HiltModules.KeyModule.class,
           PushInstructionViewModel_HiltModules.KeyModule.class,
+          RegisterViewModel_HiltModules.KeyModule.class,
           TaskDetailViewModel_HiltModules.KeyModule.class,
           TaskListViewModel_HiltModules.KeyModule.class,
           ActivityCBuilderModule.class,
@@ -240,6 +243,7 @@ public final class WiseCloudApp_HiltComponents {
           LoginViewModel_HiltModules.BindsModule.class,
           OtaUpdateViewModel_HiltModules.BindsModule.class,
           PushInstructionViewModel_HiltModules.BindsModule.class,
+          RegisterViewModel_HiltModules.BindsModule.class,
           TaskDetailViewModel_HiltModules.BindsModule.class,
           TaskListViewModel_HiltModules.BindsModule.class,
           WiseOSSettingViewModel_HiltModules.BindsModule.class
@@ -268,6 +272,7 @@ public final class WiseCloudApp_HiltComponents {
   )
   @FragmentScoped
   public abstract static class FragmentC implements LoginFragment_GeneratedInjector,
+      RegisterFragment_GeneratedInjector,
       DashboardFragment_GeneratedInjector,
       DeviceDetailFragment_GeneratedInjector,
       DeviceListFragment_GeneratedInjector,

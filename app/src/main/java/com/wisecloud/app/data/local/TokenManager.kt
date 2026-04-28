@@ -25,17 +25,17 @@ class TokenManager @Inject constructor(
 
     fun isLoggedIn(): Boolean = getToken() != null
 
-    fun saveCredentials(email: String, password: String) {
+    fun saveCredentials(username: String, password: String) {
         prefs.edit()
-            .putString(KEY_EMAIL, email)
+            .putString(KEY_EMAIL, username)
             .putString(KEY_PASSWORD, password)
             .apply()
     }
 
     fun getSavedCredentials(): Pair<String, String>? {
-        val email = prefs.getString(KEY_EMAIL, null)
+        val username = prefs.getString(KEY_EMAIL, null)
         val password = prefs.getString(KEY_PASSWORD, null)
-        return if (email != null && password != null) Pair(email, password) else null
+        return if (username != null && password != null) Pair(username, password) else null
     }
 
     fun clearCredentials() {

@@ -12,8 +12,8 @@ interface MdmApiService {
     @POST("api/auth/login")
     suspend fun login(@Body request: LoginRequest): ApiResponse<LoginResponse>
 
-    @POST("api/auth/send-code")
-    suspend fun sendVerificationCode(@Body request: SendCodeRequest): ApiResponse<Unit>
+    @POST("api/auth/register")
+    suspend fun register(@Body request: RegisterRequest): ApiResponse<Unit>
 
     // ===== 设备 =====
     @GET("api/devices/overview")

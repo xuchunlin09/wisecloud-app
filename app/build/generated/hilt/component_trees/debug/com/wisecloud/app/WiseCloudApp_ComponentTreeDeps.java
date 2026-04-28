@@ -24,6 +24,9 @@ import hilt_aggregated_deps._com_wisecloud_app_ui_MainActivity_GeneratedInjector
 import hilt_aggregated_deps._com_wisecloud_app_ui_auth_LoginFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_wisecloud_app_ui_auth_LoginViewModel_HiltModules_BindsModule;
 import hilt_aggregated_deps._com_wisecloud_app_ui_auth_LoginViewModel_HiltModules_KeyModule;
+import hilt_aggregated_deps._com_wisecloud_app_ui_auth_RegisterFragment_GeneratedInjector;
+import hilt_aggregated_deps._com_wisecloud_app_ui_auth_RegisterViewModel_HiltModules_BindsModule;
+import hilt_aggregated_deps._com_wisecloud_app_ui_auth_RegisterViewModel_HiltModules_KeyModule;
 import hilt_aggregated_deps._com_wisecloud_app_ui_dashboard_DashboardFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_wisecloud_app_ui_dashboard_DashboardViewModel_HiltModules_BindsModule;
 import hilt_aggregated_deps._com_wisecloud_app_ui_dashboard_DashboardViewModel_HiltModules_KeyModule;
@@ -104,6 +107,9 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _com_wisecloud_app_ui_auth_LoginFragment_GeneratedInjector.class,
         _com_wisecloud_app_ui_auth_LoginViewModel_HiltModules_BindsModule.class,
         _com_wisecloud_app_ui_auth_LoginViewModel_HiltModules_KeyModule.class,
+        _com_wisecloud_app_ui_auth_RegisterFragment_GeneratedInjector.class,
+        _com_wisecloud_app_ui_auth_RegisterViewModel_HiltModules_BindsModule.class,
+        _com_wisecloud_app_ui_auth_RegisterViewModel_HiltModules_KeyModule.class,
         _com_wisecloud_app_ui_dashboard_DashboardFragment_GeneratedInjector.class,
         _com_wisecloud_app_ui_dashboard_DashboardViewModel_HiltModules_BindsModule.class,
         _com_wisecloud_app_ui_dashboard_DashboardViewModel_HiltModules_KeyModule.class,

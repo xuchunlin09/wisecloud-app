@@ -10,6 +10,9 @@ object InputValidator {
         "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
     )
 
+    /** 校验用户名是否合法（非空、非纯空白） */
+    fun isValidUsername(username: String): Boolean = username.trim().isNotEmpty()
+
     /** 校验邮箱格式是否合法 */
     fun isValidEmail(email: String): Boolean = EMAIL_REGEX.matches(email.trim())
 
