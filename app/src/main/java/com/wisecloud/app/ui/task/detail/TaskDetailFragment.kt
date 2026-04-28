@@ -18,6 +18,7 @@ import com.wisecloud.app.util.showToast
 import com.wisecloud.app.util.visible
 import com.wisecloud.app.util.visibleIf
 import dagger.hilt.android.AndroidEntryPoint
+import androidx.navigation.fragment.findNavController
 
 @AndroidEntryPoint
 class TaskDetailFragment : Fragment() {
@@ -56,7 +57,7 @@ class TaskDetailFragment : Fragment() {
     private fun setupToolbar() {
         binding.toolbar.setNavigationOnClickListener {
             try {
-                androidx.navigation.fragment.findNavController(this).navigateUp()
+                findNavController().navigateUp()
             } catch (e: Exception) {
                 activity?.onBackPressedDispatcher?.onBackPressed()
             }

@@ -17,6 +17,7 @@ import com.wisecloud.app.util.showToast
 import com.wisecloud.app.util.visible
 import com.wisecloud.app.util.visibleIf
 import dagger.hilt.android.AndroidEntryPoint
+import androidx.navigation.fragment.findNavController
 
 @AndroidEntryPoint
 class DeviceListFragment : Fragment() {
@@ -51,7 +52,7 @@ class DeviceListFragment : Fragment() {
     private fun setupToolbar() {
         binding.toolbar.setNavigationOnClickListener {
             try {
-                androidx.navigation.fragment.findNavController(this).navigateUp()
+                findNavController().navigateUp()
             } catch (e: Exception) {
                 activity?.onBackPressedDispatcher?.onBackPressed()
             }
@@ -151,7 +152,7 @@ class DeviceListFragment : Fragment() {
     private fun navigateToDeviceDetail(sn: String) {
         try {
             val bundle = Bundle().apply { putString("sn", sn) }
-            androidx.navigation.fragment.findNavController(this).navigate(
+            findNavController().navigate(
                 R.id.action_deviceList_to_deviceDetail, bundle
             )
         } catch (e: Exception) {

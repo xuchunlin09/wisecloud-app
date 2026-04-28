@@ -22,6 +22,7 @@ import com.wisecloud.app.util.gone
 import com.wisecloud.app.util.visible
 import com.wisecloud.app.widget.BatchMenuBottomSheet
 import dagger.hilt.android.AndroidEntryPoint
+import androidx.navigation.fragment.findNavController
 
 @AndroidEntryPoint
 class DashboardFragment : Fragment() {
@@ -157,7 +158,7 @@ class DashboardFragment : Fragment() {
 
     private fun navigateToWizard(actionId: Int) {
         try {
-            androidx.navigation.fragment.findNavController(this).navigate(actionId)
+            findNavController().navigate(actionId)
         } catch (e: Exception) {
             // Navigation action not yet defined — will be wired in task 22
         }
@@ -166,7 +167,7 @@ class DashboardFragment : Fragment() {
     private fun navigateToDeviceDetail(sn: String) {
         try {
             val bundle = Bundle().apply { putString("sn", sn) }
-            androidx.navigation.fragment.findNavController(this).navigate(
+            findNavController().navigate(
                 R.id.action_dashboard_to_deviceDetail, bundle
             )
         } catch (e: Exception) {
@@ -176,7 +177,7 @@ class DashboardFragment : Fragment() {
 
     private fun navigateToTaskManagement() {
         try {
-            androidx.navigation.fragment.findNavController(this).navigate(
+            findNavController().navigate(
                 R.id.action_dashboard_to_taskList
             )
         } catch (e: Exception) {

@@ -21,6 +21,7 @@ import com.wisecloud.app.util.showToast
 import com.wisecloud.app.util.visible
 import com.wisecloud.app.util.visibleIf
 import dagger.hilt.android.AndroidEntryPoint
+import androidx.navigation.fragment.findNavController
 
 @AndroidEntryPoint
 class BatchInstallWizardFragment : Fragment() {
@@ -193,7 +194,7 @@ class BatchInstallWizardFragment : Fragment() {
     private fun navigateToTaskDetail(traceId: String) {
         try {
             val bundle = Bundle().apply { putString("traceId", traceId) }
-            androidx.navigation.fragment.findNavController(this).navigate(
+            findNavController().navigate(
                 R.id.action_batchInstall_to_taskDetail, bundle
             )
         } catch (e: Exception) {

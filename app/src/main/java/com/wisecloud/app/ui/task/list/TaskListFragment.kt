@@ -16,6 +16,7 @@ import com.wisecloud.app.util.showToast
 import com.wisecloud.app.util.visible
 import com.wisecloud.app.util.visibleIf
 import dagger.hilt.android.AndroidEntryPoint
+import androidx.navigation.fragment.findNavController
 
 @AndroidEntryPoint
 class TaskListFragment : Fragment() {
@@ -50,7 +51,7 @@ class TaskListFragment : Fragment() {
     private fun setupToolbar() {
         binding.toolbar.setNavigationOnClickListener {
             try {
-                androidx.navigation.fragment.findNavController(this).navigateUp()
+                findNavController().navigateUp()
             } catch (e: Exception) {
                 activity?.onBackPressedDispatcher?.onBackPressed()
             }
@@ -143,7 +144,7 @@ class TaskListFragment : Fragment() {
     private fun navigateToTaskDetail(traceId: String) {
         try {
             val bundle = Bundle().apply { putString("traceId", traceId) }
-            androidx.navigation.fragment.findNavController(this).navigate(
+            findNavController().navigate(
                 R.id.action_taskList_to_taskDetail, bundle
             )
         } catch (e: Exception) {

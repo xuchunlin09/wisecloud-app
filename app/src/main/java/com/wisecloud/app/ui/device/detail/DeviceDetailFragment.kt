@@ -30,6 +30,7 @@ import com.wisecloud.app.util.showToast
 import com.wisecloud.app.util.visible
 import com.wisecloud.app.util.visibleIf
 import dagger.hilt.android.AndroidEntryPoint
+import androidx.navigation.fragment.findNavController
 
 @AndroidEntryPoint
 class DeviceDetailFragment : Fragment() {
@@ -66,7 +67,7 @@ class DeviceDetailFragment : Fragment() {
     private fun setupBackButton() {
         binding.btnBack.setOnClickListener {
             try {
-                androidx.navigation.fragment.findNavController(this).navigateUp()
+                findNavController().navigateUp()
             } catch (e: Exception) {
                 activity?.onBackPressedDispatcher?.onBackPressed()
             }

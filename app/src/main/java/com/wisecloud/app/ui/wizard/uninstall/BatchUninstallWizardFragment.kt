@@ -17,6 +17,7 @@ import com.wisecloud.app.ui.wizard.common.DeviceTagSelectFragment
 import com.wisecloud.app.util.showToast
 import com.wisecloud.app.util.visibleIf
 import dagger.hilt.android.AndroidEntryPoint
+import androidx.navigation.fragment.findNavController
 
 @AndroidEntryPoint
 class BatchUninstallWizardFragment : Fragment() {
@@ -141,7 +142,7 @@ class BatchUninstallWizardFragment : Fragment() {
     private fun navigateToTaskDetail(traceId: String) {
         try {
             val bundle = Bundle().apply { putString("traceId", traceId) }
-            androidx.navigation.fragment.findNavController(this).navigate(
+            findNavController().navigate(
                 R.id.action_batchUninstall_to_taskDetail, bundle
             )
         } catch (e: Exception) { /* nav not wired yet */ }

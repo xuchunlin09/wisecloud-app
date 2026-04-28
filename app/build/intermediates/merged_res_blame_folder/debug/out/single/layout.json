@@ -1,0 +1,118 @@
+[
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/item_search_result.xml",
+        "source": "com.wisecloud.app-main-6:/layout/item_search_result.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/item_firmware.xml",
+        "source": "com.wisecloud.app-main-6:/layout/item_firmware.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/bottom_sheet_batch_menu.xml",
+        "source": "com.wisecloud.app-main-6:/layout/bottom_sheet_batch_menu.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/item_app_version.xml",
+        "source": "com.wisecloud.app-main-6:/layout/item_app_version.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/item_instruction.xml",
+        "source": "com.wisecloud.app-main-6:/layout/item_instruction.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/fragment_batch_install_wizard.xml",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_batch_install_wizard.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/fragment_dashboard.xml",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/item_app_select.xml",
+        "source": "com.wisecloud.app-main-6:/layout/item_app_select.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/fragment_login.xml",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/fragment_push_instruction_wizard.xml",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_push_instruction_wizard.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/item_device_tag.xml",
+        "source": "com.wisecloud.app-main-6:/layout/item_device_tag.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/item_task.xml",
+        "source": "com.wisecloud.app-main-6:/layout/item_task.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/item_task_device.xml",
+        "source": "com.wisecloud.app-main-6:/layout/item_task_device.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/bottom_sheet_installed_apps.xml",
+        "source": "com.wisecloud.app-main-6:/layout/bottom_sheet_installed_apps.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/fragment_file_push_wizard.xml",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_file_push_wizard.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/item_uninstall_app.xml",
+        "source": "com.wisecloud.app-main-6:/layout/item_uninstall_app.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/item_installed_app_list.xml",
+        "source": "com.wisecloud.app-main-6:/layout/item_installed_app_list.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/fragment_device_detail.xml",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_device_detail.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/item_device.xml",
+        "source": "com.wisecloud.app-main-6:/layout/item_device.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/fragment_ota_update_wizard.xml",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_ota_update_wizard.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/fragment_device_list.xml",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_device_list.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/fragment_wiseos_setting_wizard.xml",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_wiseos_setting_wizard.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.wisecloud.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/item_installed_app_grid.xml",
+        "source": "com.wisecloud.app-main-6:/layout/item_installed_app_grid.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/fragment_task_list.xml",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_task_list.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/fragment_device_tag_select.xml",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_device_tag_select.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/fragment_batch_uninstall_wizard.xml",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_batch_uninstall_wizard.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/fragment_task_detail.xml",
+        "source": "com.wisecloud.app-main-6:/layout/fragment_task_detail.xml"
+    },
+    {
+        "merged": "com.wisecloud.app-mergeDebugResources-3:/layout/bottom_sheet_remote_actions.xml",
+        "source": "com.wisecloud.app-main-6:/layout/bottom_sheet_remote_actions.xml"
+    }
+]

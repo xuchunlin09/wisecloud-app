@@ -25,9 +25,13 @@ class MainActivity : AppCompatActivity() {
                     .findFragmentById(R.id.nav_host_fragment) as? NavHostFragment
                 val navController = navHostFragment?.navController ?: return@collect
 
-                navController.navigate(R.id.loginFragment) {
-                    popUpTo(R.id.nav_graph) { inclusive = true }
-                }
+                navController.navigate(
+                    R.id.loginFragment,
+                    null,
+                    androidx.navigation.NavOptions.Builder()
+                        .setPopUpTo(R.id.nav_graph, true)
+                        .build()
+                )
             }
         }
     }

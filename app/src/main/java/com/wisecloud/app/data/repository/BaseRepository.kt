@@ -18,14 +18,18 @@ abstract class BaseRepository {
             Result.Error(response.code, response.message)
         }
     } catch (e: UnknownHostException) {
+        android.util.Log.e("API", "DNS resolution failed: ${e.message}")
         Result.NetworkError
     } catch (e: SocketTimeoutException) {
+        android.util.Log.e("API", "Connection timed out: ${e.message}")
         Result.NetworkError
     } catch (e: IOException) {
+        android.util.Log.e("API", "IO error: ${e.message}")
         Result.NetworkError
     } catch (e: HttpException) {
         Result.Error(e.code(), e.message())
     } catch (e: Exception) {
+        android.util.Log.e("API", "Unknown error: ${e.message}")
         Result.Error(-1, e.message ?: "未知错误")
     }
 
