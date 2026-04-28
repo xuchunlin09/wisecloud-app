@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <!-- ===== Login ===== -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.wisecloud.app.ui.auth.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- ===== Dashboard ===== -->
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.wisecloud.app.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_dashboard_to_deviceDetail"
+            app:destination="@id/deviceDetailFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_deviceList"
+            app:destination="@id/deviceListFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_taskList"
+            app:destination="@id/taskListFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_batchInstall"
+            app:destination="@id/batchInstallWizardFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_batchUninstall"
+            app:destination="@id/batchUninstallWizardFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_otaUpdate"
+            app:destination="@id/otaUpdateWizardFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_pushInstruction"
+            app:destination="@id/pushInstructionWizardFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_wiseosSetting"
+            app:destination="@id/wiseosSettingWizardFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_filePush"
+            app:destination="@id/filePushWizardFragment" />
+    </fragment>
+
+    <!-- ===== Device List ===== -->
+    <fragment
+        android:id="@+id/deviceListFragment"
+        android:name="com.wisecloud.app.ui.device.list.DeviceListFragment"
+        android:label="Device List"
+        tools:layout="@layout/fragment_device_list">
+
+        <action
+            android:id="@+id/action_deviceList_to_deviceDetail"
+            app:destination="@id/deviceDetailFragment" />
+    </fragment>
+
+    <!-- ===== Device Detail ===== -->
+    <fragment
+        android:id="@+id/deviceDetailFragment"
+        android:name="com.wisecloud.app.ui.device.detail.DeviceDetailFragment"
+        android:label="Device Detail"
+        tools:layout="@layout/fragment_device_detail">
+
+        <argument
+            android:name="sn"
+            app:argType="string" />
+    </fragment>
+
+    <!-- ===== Task List ===== -->
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="com.wisecloud.app.ui.task.list.TaskListFragment"
+        android:label="Task List"
+        tools:layout="@layout/fragment_task_list">
+
+        <action
+            android:id="@+id/action_taskList_to_taskDetail"
+            app:destination="@id/taskDetailFragment" />
+    </fragment>
+
+    <!-- ===== Task Detail ===== -->
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.wisecloud.app.ui.task.detail.TaskDetailFragment"
+        android:label="Task Detail"
+        tools:layout="@layout/fragment_task_detail">
+
+        <argument
+            android:name="traceId"
+            app:argType="string" />
+    </fragment>
+
+    <!-- ===== Batch Install Wizard ===== -->
+    <fragment
+        android:id="@+id/batchInstallWizardFragment"
+        android:name="com.wisecloud.app.ui.wizard.install.BatchInstallWizardFragment"
+        android:label="Batch Install"
+        tools:layout="@layout/fragment_batch_install_wizard">
+
+        <action
+            android:id="@+id/action_batchInstall_to_taskDetail"
+            app:destination="@id/taskDetailFragment" />
+    </fragment>
+
+    <!-- ===== Batch Uninstall Wizard ===== -->
+    <fragment
+        android:id="@+id/batchUninstallWizardFragment"
+        android:name="com.wisecloud.app.ui.wizard.uninstall.BatchUninstallWizardFragment"
+        android:label="Batch Uninstall"
+        tools:layout="@layout/fragment_batch_uninstall_wizard">
+
+        <action
+            android:id="@+id/action_batchUninstall_to_taskDetail"
+            app:destination="@id/taskDetailFragment" />
+    </fragment>
+
+    <!-- ===== OTA Update Wizard ===== -->
+    <fragment
+        android:id="@+id/otaUpdateWizardFragment"
+        android:name="com.wisecloud.app.ui.wizard.ota.OtaUpdateWizardFragment"
+        android:label="OTA Update"
+        tools:layout="@layout/fragment_ota_update_wizard">
+
+        <action
+            android:id="@+id/action_otaUpdate_to_taskDetail"
+            app:destination="@id/taskDetailFragment" />
+    </fragment>
+
+    <!-- ===== Push Instruction Wizard ===== -->
+    <fragment
+        android:id="@+id/pushInstructionWizardFragment"
+        android:name="com.wisecloud.app.ui.wizard.instruction.PushInstructionWizardFragment"
+        android:label="Push Instruction"
+        tools:layout="@layout/fragment_push_instruction_wizard">
+
+        <action
+            android:id="@+id/action_pushInstruction_to_taskDetail"
+            app:destination="@id/taskDetailFragment" />
+    </fragment>
+
+    <!-- ===== WiseOS Setting Wizard ===== -->
+    <fragment
+        android:id="@+id/wiseosSettingWizardFragment"
+        android:name="com.wisecloud.app.ui.wizard.wiseos.WiseOSSettingWizardFragment"
+        android:label="WiseOS Setting"
+        tools:layout="@layout/fragment_wiseos_setting_wizard">
+
+        <action
+            android:id="@+id/action_wiseosSetting_to_taskDetail"
+            app:destination="@id/taskDetailFragment" />
+    </fragment>
+
+    <!-- ===== File Push Wizard ===== -->
+    <fragment
+        android:id="@+id/filePushWizardFragment"
+        android:name="com.wisecloud.app.ui.wizard.filepush.FilePushWizardFragment"
+        android:label="File Push"
+        tools:layout="@layout/fragment_file_push_wizard">
+
+        <action
+            android:id="@+id/action_filePush_to_taskDetail"
+            app:destination="@id/taskDetailFragment" />
+    </fragment>
+
+</navigation>
